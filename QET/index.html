@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quotes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <button id="home-btn" class="nav-btn active">Home</button>
+            <button id="favorites-btn" class="nav-btn">Favorites</button>
+        </nav>
+
+        <!-- Home Screen -->
+        <div id="home-screen" class="screen active">
+            <div class="quote-card">
+                <div class="quote-text" id="quote-text">Loading quote...</div>
+                <div class="quote-author" id="quote-author">- Author</div>
+            </div>
+            <div class="buttons">
+                <button id="new-quote-btn" class="btn primary">New Quote</button>
+                <button id="favorite-btn" class="btn secondary">Favorite</button>
+                <button id="copy-btn" class="btn secondary">Copy</button>
+            </div>
+        </div>
+
+        <!-- Favorites Screen -->
+        <div id="favorites-screen" class="screen">
+            <h2>Your Favorite Quotes</h2>
+            <div id="favorites-list" class="favorites-list">
+                <!-- Favorites will be populated here -->
+            </div>
+            <div id="no-favorites" class="no-favorites">No favorites yet. Add some quotes!</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
