@@ -183,17 +183,7 @@ body {
     box-shadow: 0 6px 20px rgba(153, 50, 204, 0.5);
 }
 
-.btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
-    color: #e0e0e0;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-}
 
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
 
 /* Sections */
 section {
