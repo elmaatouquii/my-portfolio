@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for fade-in animations
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -26,12 +26,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections for animations
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Navbar background change on scroll
+
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -41,29 +40,27 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Form submission handling
+
 document.querySelector('.contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Get form data
+
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
 
-    // Simple validation
+
     if (!data.name || !data.email || !data.message) {
         alert('Veuillez remplir tous les champs.');
         return;
     }
 
-    // Here you would typically send the data to a server
-    // For now, we'll just show a success message
+
     alert('Merci pour votre message! Je vous répondrai bientôt.');
 
-    // Reset form
+
     this.reset();
 });
 
-// Add loading animation to buttons
 document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', function() {
         if (this.href && this.href !== '#') {
@@ -75,7 +72,7 @@ document.querySelectorAll('.btn').forEach(btn => {
     });
 });
 
-// Typing effect for hero subtitle (optional enhancement)
+
 function typeWriter(element, text, speed = 50) {
     let i = 0;
     element.innerHTML = '';
@@ -89,14 +86,14 @@ function typeWriter(element, text, speed = 50) {
     type();
 }
 
-// Apply typing effect to hero subtitle
+
 const heroSubtitle = document.querySelector('.hero-subtitle');
 if (heroSubtitle) {
     const originalText = heroSubtitle.textContent;
     typeWriter(heroSubtitle, originalText, 100);
 }
 
-// Parallax effect for hero section (subtle)
+
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
@@ -105,11 +102,9 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Mobile menu toggle (if needed in future)
+
 function toggleMobileMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
 }
 
-// You can add a hamburger button later if needed
-// document.querySelector('.hamburger').addEventListener('click', toggleMobileMenu);

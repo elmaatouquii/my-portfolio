@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -70,7 +68,7 @@ body {
     text-shadow: 0 0 10px rgba(153, 50, 204, 0.5);
 }
 
-/* Hero Section */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -185,7 +183,6 @@ body {
 
 
 
-/* Sections */
 section {
     padding: 80px 0;
 }
@@ -201,7 +198,7 @@ section {
     text-shadow: 0 0 20px rgba(153, 50, 204, 0.3);
 }
 
-/* About Section */
+
 .about {
     background: rgba(26, 26, 46, 0.3);
     backdrop-filter: blur(10px);
@@ -259,7 +256,7 @@ section {
     line-height: 1.6;
 }
 
-/* Skills Section */
+
 .skills {
     background: rgba(26, 26, 46, 0.3);
     backdrop-filter: blur(10px);
@@ -295,33 +292,33 @@ section {
     border-color: rgba(153, 50, 204, 0.3);
 }
 
-/* لون لكل compétence */
+
 .skill-card i.fa-html5 {
-    color: #E34F26; /* HTML5 برتقالي */
+    color: #E34F26; 
 }
 
 .skill-card i.fa-js-square {
-    color: #F7DF1E; /* JavaScript أصفر */
+    color: #F7DF1E; 
 }
 
 .skill-card i.fa-php {
-    color: #777BB4; /* PHP بنفسجي */
+    color: #777BB4; 
 }
 
 .skill-card i.fa-bootstrap {
-    color: #7952B3; /* Bootstrap بنفسجي غامق */
+    color: #7952B3; 
 }
 
 .skill-card i.fa-git-alt {
-    color: #F1502F; /* Git أحمر برتقالي */
+    color: #F1502F; 
 }
 
 .skill-card i.fa-code {
-    color: #0A74DA; /* AJAX أزرق */
+    color: #0A74DA; 
 }
 
 .skill-card i.fa-cogs {
-    color: #4CAF50; /* POO أخضر */
+    color: #4CAF50;
 }
 
 .skill-card span {
@@ -344,7 +341,7 @@ section {
     margin: 0 auto;
 }
 
-/* Projects Section */
+
 .projects {
     background: rgba(26, 26, 46, 0.3);
     backdrop-filter: blur(10px);
@@ -399,7 +396,6 @@ section {
 
 
 
-/* Contact Section */
 .contact {
     background: rgba(26, 26, 46, 0.3);
     backdrop-filter: blur(10px);
@@ -468,7 +464,7 @@ section {
     text-shadow: 0 0 10px rgba(153, 50, 204, 0.5);
 }
 
-/* Animations */
+
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -482,10 +478,10 @@ section {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* For mobile, you might want to add a hamburger menu */
+        display: none; 
     }
 
     .hero-title {
