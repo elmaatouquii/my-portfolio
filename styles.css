@@ -312,7 +312,12 @@ section {
 .skill-card i.fa-git-alt {
     color: #F1502F; 
 }
-
+.skill-card i.fa-laravel {
+    color: #f05340; /* Laravel أحمر */
+}
+.skill-card i.fa-react {
+    color: #61DBFB; /* React أزرق سماوي */
+}
 .skill-card i.fa-code {
     color: #0A74DA; 
 }

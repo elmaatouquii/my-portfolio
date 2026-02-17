@@ -108,3 +108,24 @@ function toggleMobileMenu() {
     navLinks.classList.toggle('active');
 }
 
+// You can add a hamburger button later if needed
+// document.querySelector('.hamburger').addEventListener('click', toggleMobileMenu);
+function sendToWhatsApp(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    let phoneNumber = "212705912597"; // حيد + وخليه غير الرقم الدولي
+
+    let text = 
+        "📩 Nouveau message depuis le Portfolio %0A%0A" +
+        "👤 Nom: " + name + "%0A" +
+        "📧 Email: " + email + "%0A" +
+        "💬 Message: " + message;
+
+    let url = "https://wa.me/" + phoneNumber + "?text=" + text;
+
+    window.open(url, "_blank");
+}
